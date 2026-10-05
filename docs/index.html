@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loop — AI presentations, instantly.</title>
+<meta name="description" content="Describe a topic. Loop writes the slides. A fast, minimal AI presentation generator for Android.">
+<meta property="og:title" content="Loop — AI presentations, instantly.">
+<meta property="og:description" content="Describe a topic. Loop writes the slides.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --bg: #0B0E14;
+    --surface: #111619;
+    --border: #1C2226;
+    --muted: #5C696F;
+    --text: #FFFFFF;
+    --text-2: #CFD8DC;
+    --accent: #5B8DEF;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration: none; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 28px; }
+
+  nav { padding: 24px 0; display: flex; align-items: center; }
+  nav .brand { font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: var(--text); }
+  nav .links { margin-left: auto; display: flex; gap: 24px; }
+  nav .links a { color: var(--muted); font-size: 14px; }
+  nav .links a:hover { color: var(--text-2); }
+
+  .hero { padding: 96px 0 80px; }
+  .hero h1 { margin: 0; font-size: 64px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; }
+  .hero h1 .accent { color: var(--accent); }
+  .hero p { margin: 24px 0 0; font-size: 20px; line-height: 1.5; color: var(--text-2); max-width: 620px; }
+  .hero .cta { margin-top: 40px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; gap: 10px;
+    background: var(--accent); color: white; padding: 16px 28px;
+    border-radius: 100px; font-weight: 500; font-size: 16px;
+    transition: opacity .15s; }
+  .btn:hover { opacity: .9; }
+  .btn.secondary { background: transparent; color: var(--text);
+    border: 1px solid var(--border); }
+  .btn.secondary:hover { background: var(--surface); }
+
+  section { padding: 72px 0; border-top: 1px solid var(--border); }
+  section h2 { margin: 0 0 12px; font-size: 14px; font-weight: 500;
+    color: var(--muted); letter-spacing: 0.18em; text-transform: uppercase; }
+  section p.lead { margin: 0 0 48px; font-size: 32px; font-weight: 600;
+    letter-spacing: -0.02em; line-height: 1.2; max-width: 720px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 28px; }
+  .card h3 { margin: 0 0 10px; font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+  .card p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--muted); }
+
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .shot { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 20px; aspect-ratio: 9/19; padding: 16px; display: flex;
+    align-items: flex-end; }
+  .shot span { font-size: 11px; letter-spacing: 0.15em; color: var(--muted);
+    text-transform: uppercase; }
+
+  footer { padding: 48px 0; border-top: 1px solid var(--border);
+    display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+  footer .muted { color: var(--muted); font-size: 13px; }
+  footer .links { margin-left: auto; display: flex; gap: 24px; }
+  footer .links a { color: var(--muted); font-size: 13px; }
+  footer .links a:hover { color: var(--text-2); }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 42px; }
+    .hero p { font-size: 17px; }
+    section p.lead { font-size: 24px; }
+    .shots { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <nav>
+    <div class="brand">Loop</div>
+    <div class="links">
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#support">Support</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Describe a topic.<br><span class="accent">Loop writes the slides.</span></h1>
+    <p>Turn a sentence into a full presentation in seconds. Templates, themes, and AI that actually understands structure.</p>
+    <div class="cta">
+      <a class="btn" href="#download">Download for Android</a>
+      <a class="btn secondary" href="#features">See how it works</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section id="features">
+    <h2>What it does</h2>
+    <p class="lead">Every deck starts from one sentence. Loop handles the rest.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>AI generates slides</h3>
+        <p>Type "the causes of World War I" and Loop writes a 10-slide deck — title slide, sections, content, and a conclusion.</p>
+      </div>
+      <div class="card">
+        <h3>Themes that look designed</h3>
+        <p>Modern, Executive, Editorial, Minimal. Each theme picks its own colors and fonts, so every deck looks intentional.</p>
+      </div>
+      <div class="card">
+        <h3>Templates for anything</h3>
+        <p>Business pitch, school project, book report, science study. Start from a proven structure and let AI fill it in.</p>
+      </div>
+      <div class="card">
+        <h3>Edit any slide</h3>
+        <p>Tap edit and change the title or any bullet. Loop re-renders the slide instantly.</p>
+      </div>
+      <div class="card">
+        <h3>Everything on your phone</h3>
+        <p>Your projects stay on your device. Loop only receives the topic you type, to write the slides.</p>
+      </div>
+      <div class="card">
+        <h3>Fast, quiet, minimal</h3>
+        <p>No splash screens, no ads, no clutter. Just the tool you need to get a presentation done.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section>
+    <h2>Preview</h2>
+    <p class="lead">A quiet, dark interface that stays out of the way.</p>
+    <div class="shots">
+      <div class="shot"><span>Home</span></div>
+      <div class="shot"><span>New presentation</span></div>
+      <div class="shot"><span>Slide view</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="download">
+    <h2>Download</h2>
+    <p class="lead">Loop is available as a direct APK for Android.</p>
+    <a class="btn" href="https://github.com/siefecom-ai/loop/releases/download/v1.0/app-release.apk">Download Loop APK</a>
+    <p style="margin-top: 20px; color: var(--muted); font-size: 13px;">
+      Requires Android 9 or newer. Because Loop is distributed outside the Play Store, you may need to enable
+      "Install unknown apps" for your browser.
+    </p>
+  </section>
+</div>
+
+<div class="wrap">
+  <footer id="support">
+    <span class="muted">© 2026 Loop</span>
+    <div class="links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="mailto:support@example.com">Support</a>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
